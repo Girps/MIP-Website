@@ -13,7 +13,7 @@ function InputHeader()
         
         try
         {
-            let data  = await (await fetch(`http://localhost:18080/MIPS/${query}` )).text();
+            let data  = await (await fetch(`https://mips-converter.com/MIPS/${query}` )).text();
             console.log(data) 
             data = JSON.parse(data);
             console.log(data.work.replace("\n", "\\\n")); 
